@@ -32,13 +32,14 @@ Without scaling the data, the random forest classifier model is prodcuing the mo
 
 ## Revisit the Preprocessing: Scale the data
 
-The data going into these models was never scaled, an important step in preprocessing. Use `StandardScaler` to scale the training and testing sets. Before re-fitting the LogisticRegression and RandomForestClassifier models on the scaled data, make another prediction about how you think scaling will affect the accuracy of the models. Write your predictions down and provide justification.
+Once I scaled the data, the logistic regression became the better classifier. It had an accuracy score of .66.  
+The Random Forest model decreased in accuracy from .64 to .5.  From what I understand, this is to be expected as Random Forest modeling
+doesn't rely on scaled data to make accurate calculations, while logistic regression models do.  
 
-Fit and score the LogisticRegression and RandomForestClassifier models on the scaled data. How do the model scores compare to each other, and to the previous results on unscaled data? How does this compare to your prediction? Write down your results and thoughts.
+While I was able to produce a model with a .66 accuracy metric, I would be concerned about employing this out into the wild for credit 
+worthiness rating purposes.  There is still far too much inaccuracy, in my opinion, and money would be lost on a consistent basis if 
+loan decisions were based on this model.
 
-## Rubric
-
-[Unit 19 - Supervised Machine Learning Homework Rubric](https://docs.google.com/document/d/1f_eN3TYiGqlaWL9Utk5U-P491OeWqFSiv7FIlI_d4_U/edit?usp=sharing)
 
 ### References
 
