@@ -21,11 +21,14 @@ I created a training set from the 2019 loans using `pd.get_dummies()` to convert
 
 ## Consider the models
 
-You will be creating and comparing two models on this data: a logistic regression, and a random forests classifier. Before you create, fit, and score the models, make a prediction as to which model you think will perform better. You do not need to be correct! Write down (in markdown cells in your Jupyter Notebook or in a separate document) your prediction, and provide justification for your educated guess.
+After looking at the dataset and considering the two model types, I believe that the logistic regression model 
+will perform better for this dataset.  Both Random Forest and Logistic Regression models are good for classification 
+problems, but I believe with over 80 variables to consider, the Logistic model will win out.  Based on my research, 
+Random Forest is recommended for simpler classification problems.
 
 ## Fit a LogisticRegression model and RandomForestClassifier model
 
-Create a LogisticRegression model, fit it to the data, and print the model's score. Do the same for a RandomForestClassifier. You may choose any starting hyperparameters you like. Which model performed better? How does that compare to your prediction? Write down your results and thoughts.
+Without scaling the data, the random forest classifier model is prodcuing the most accurate model at this point, defying my prediction.  
 
 ## Revisit the Preprocessing: Scale the data
 
